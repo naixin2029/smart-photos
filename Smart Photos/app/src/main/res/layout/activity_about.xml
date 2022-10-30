@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/about_page_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button_back_edit_profile"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_margin="12dp"
+            android:background="@drawable/abc_vector_test"
+            android:backgroundTint="@color/colorPrimary"
+            android:onClick="onBackButtonClick"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/about_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/about"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/about_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/about_page_header"
+        android:paddingHorizontal="28sp">
+
+        <RelativeLayout
+            android:id="@+id/about_developers_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/about_terms_button"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@color/fui_transparent"
+                android:textColor="@color/colorPrimary"
+                android:layout_centerHorizontal="true"
+                android:textAllCaps="false"
+                android:text="@string/terms_of_use_privacy_policy"
+                android:fontFamily="@font/lato"
+                android:onClick="onTermsPressed"
+                />
+
+            <TextView
+                android:id="@+id/about_developers_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/developers"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="18sp"
+                android:layout_below="@id/about_terms_button"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:layout_marginHorizontal="8sp"
+                android:text="@string/developers_list"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="14sp"
+                android:layout_below="@id/about_developers_title"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

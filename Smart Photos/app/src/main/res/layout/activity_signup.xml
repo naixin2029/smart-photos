@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_signup">
+
+    <Button
+        android:id="@+id/button_back_edit_profile"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_margin="12dp"
+        android:background="@drawable/abc_vector_test"
+        android:backgroundTint="@color/colorPrimary"
+        android:onClick="onBackButtonClick"
+        android:layout_alignParentStart="true"/>
+    <!--
+    <ImageView
+        android:id="@+id/signup_logo"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:keepScreenOn="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/placeholder"
+        android:fadingEdge="horizontal"
+        />
+     -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        >
+
+        <TextView
+            android:id="@+id/sign_up_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/sign_up"
+            android:textSize="36sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginVertical="10dp"
+            android:fontFamily="@font/lato"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/signup_username_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sign_up_text"
+            android:hint="@string/username"
+            android:layout_marginVertical="5dp"
+            style="@style/TextInputLayoutStyle"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/signup_username_text"
+                android:inputType="textPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/signup_email_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signup_username_layout"
+            android:layout_marginVertical="5dp"
+            android:hint="@string/email"
+            style="@style/TextInputLayoutStyle">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/signup_email_text"
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/signup_password_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signup_email_layout"
+            android:hint="@string/password"
+            android:layout_marginVertical="5dp"
+            app:endIconMode="password_toggle"
+            style="@style/TextInputLayoutStyle">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/signup_password_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:fontFamily="@font/lato" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/signup_activity_signup_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signup_password_layout"
+            android:layout_centerHorizontal="true"
+            android:text="@string/sign_up"
+            android:textColor="#FFFFFF"
+            android:onClick="registerUser"
+            android:layout_marginTop="30dp"
+            android:shadowRadius="200"
+            android:fontFamily="@font/lato"
+            app:backgroundTint="@color/colorPrimary"
+            app:cornerRadius="25dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        >
+        <TextView
+            android:id="@+id/signup_agreement_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/terms_of_service"
+            android:fontFamily="@font/lato"/>
+
+        <Button
+            android:id="@+id/signup_terms_and_conditions_text"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@color/fui_transparent"
+            android:textColor="@color/colorPrimary"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="false"
+            android:text="@string/terms_of_use_privacy_policy"
+            android:layout_below="@id/signup_agreement_text"
+            android:fontFamily="@font/lato"
+            android:onClick="onTermsPressed"
+            />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/signup_progressBar"
+        style="?android:attr/progressBarStyle"
+        android:indeterminateTint="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        />
+</RelativeLayout>

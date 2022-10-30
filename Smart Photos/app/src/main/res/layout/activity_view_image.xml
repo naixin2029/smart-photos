@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/view_image_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button_back_view_page"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_margin="12dp"
+            android:background="@drawable/abc_vector_test"
+            android:backgroundTint="#FCBCB9B9"
+            android:onClick="onBackButtonClick"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/view_image_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:text="@string/view_image"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/view_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:elevation="1dp"
+        android:layout_below="@id/view_image_header"
+        android:visibility="visible">
+
+        <ProgressBar
+            android:id="@+id/view_loading_progress_bar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="visible"/>
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/view_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/view_image_header"
+        tools:layout_editor_absoluteX="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/view_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/shared_image"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+            <RelativeLayout
+                android:id="@+id/share_metadata_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_below="@id/view_image_view" >
+
+                <ImageView
+                    android:id="@+id/view_metadata_button"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_alignParentStart="true"
+                    android:onClick="onMetadataPress"
+                    app:srcCompat="@drawable/ic_outline_integration_instructions_24"
+                    app:tint="@color/colorPrimary" />
+
+                <ImageView
+                    android:id="@+id/view_map_button"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_toEndOf="@id/view_metadata_button"
+                    android:onClick="onMapButtonPress"
+                    app:srcCompat="@drawable/ic_outline_location_on_24"
+                    app:tint="@color/colorPrimary" />
+
+                <ImageView
+                    android:id="@+id/view_bookmark_button"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentEnd="true"
+                    android:onClick="onBookmarkButtonPress"
+                    app:srcCompat="@drawable/ic_outline_bookmark_border_24"
+                    app:tint="@color/colorPrimary" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

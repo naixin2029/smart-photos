@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/map_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="12dp">
+
+        <Button
+            android:id="@+id/button_back_map"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:background="@drawable/abc_vector_test"
+            android:backgroundTint="#FCBCB9B9"
+            android:onClick="onBackButtonClick"
+            android:layout_marginStart="18dp" />
+
+        <TextView
+            android:id="@+id/map_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/image_location"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/share_map_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/map_top_bar"
+        android:layout_above="@id/map_bottom_bar"
+        tools:context=".map.MapActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+    <LinearLayout
+        android:id="@+id/map_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="18dp"
+        android:paddingHorizontal="24dp"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" >
+
+            <ImageView
+                android:id="@+id/map_lat_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginHorizontal="10dp"
+                android:src="@drawable/ic_baseline_arrow_upward_24"
+                app:tint="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/map_lat_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/map_lat_icon"
+                android:text=""
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" >
+
+            <ImageView
+                android:id="@+id/map_lon_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:src="@drawable/ic_outline_arrow_forward_24"
+                app:tint="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/map_lon_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/map_lon_icon"
+                android:text=""
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_edit_profile_page">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyle"
+        android:indeterminateTint="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        />
+
+    <RelativeLayout
+        android:id="@+id/edit_page_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button_save_edit_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:onClick="editProfile"
+            android:text="@string/save"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+
+        <Button
+            android:id="@+id/button_back_edit_profile"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_margin="12dp"
+            android:background="@drawable/abc_vector_test"
+            android:backgroundTint="@color/colorPrimary"
+            android:onClick="onBackButtonClick"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/edit_profile_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_profile"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="18sp"
+            android:layout_toEndOf="@id/button_back_edit_profile"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image_edit_profile"
+        android:layout_width="101dp"
+        android:layout_height="101dp"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:contentDescription="@string/todo"
+        android:onClick="changePicture"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edit_page_header"
+        android:src="@drawable/default_profile_image" />
+
+    <TextView
+        android:id="@+id/profile_image_label_edit_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/change_profile_photo"
+        android:onClick="changePicture"
+        android:layout_below="@+id/profile_image_edit_profile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name_layout_edit_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginVertical="12dp"
+        android:layout_below="@id/profile_image_label_edit_profile"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name_field_edit_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:inputType="textPersonName"
+            android:maxLength="20"
+            android:drawableEnd="@drawable/ic_baseline_edit_24"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email_layout_edit_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginVertical="12dp"
+        android:layout_below="@id/name_layout_edit_profile"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_field_edit_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:drawableEnd="@drawable/ic_baseline_edit_24" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_layout_edit_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginVertical="12dp"
+        android:layout_below="@id/email_layout_edit_profile"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_field_edit_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:drawableEnd="@drawable/ic_baseline_edit_24" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/about_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about"
+            android:layout_marginBottom="24dp"
+            android:onClick="onAboutPressed"
+            android:textColor="@color/Text"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_weight="0.5"/>
+
+        <Button
+            android:id="@+id/logout_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/logout"
+            android:layout_marginBottom="24dp"
+            android:onClick="onLogoutPressed"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_weight="0.5"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

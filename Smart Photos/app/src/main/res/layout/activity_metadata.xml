@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:backgroundTint="@android:color/transparent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/metadata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/transparent"
+        android:backgroundTint="@android:color/transparent"
+        >
+        <RelativeLayout
+            android:id="@+id/owner_section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/owner_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/person"
+                android:backgroundTint="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/owner_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/owner_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="10dp"
+                android:text="@string/owner"/>
+
+            <TextView
+                android:id="@+id/owner_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/owner_label"
+                android:layout_alignStart="@id/owner_label"
+                android:layout_marginTop="20dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/date_section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/gyroscope_section"
+            android:layout_alignParentEnd="true">
+
+            <ImageView
+                android:id="@+id/date_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/calendar_icon"
+                android:backgroundTint="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/date_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/date_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="10dp"
+                android:text="@string/date"/>
+
+            <TextView
+                android:id="@+id/date_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/date_label"
+                android:layout_alignStart="@id/date_label"
+                android:layout_marginTop="20dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/acceleration_section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/owner_section">
+
+            <ImageView
+                android:id="@+id/acceleration_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/acceleration_icon"
+                android:backgroundTint="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/acceleration_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/acceleration_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="10dp"
+                android:text="@string/acceleration"/>
+
+            <TextView
+                android:id="@+id/acceleration_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/acceleration_label"
+                android:layout_alignStart="@id/acceleration_label"
+                android:layout_marginTop="20dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/gyroscope_section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:layout_below="@id/owner_section">
+
+            <ImageView
+                android:id="@+id/gyroscope_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/gyroscope_icon"
+                android:backgroundTint="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/gyroscope_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/gyroscope_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="10dp"
+                android:text="@string/gyroscope"/>
+
+            <TextView
+                android:id="@+id/gyroscope_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gyroscope_label"
+                android:layout_alignStart="@id/gyroscope_label"
+                android:layout_marginTop="20dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/magnetic_field_section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/acceleration_section">
+
+            <ImageView
+                android:id="@+id/magnetic_field_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/magnetic_field_icon"
+                android:backgroundTint="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/magnetic_field_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/magnetic_field_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="10dp"
+                android:text="@string/magnetic_field"/>
+
+            <TextView
+                android:id="@+id/magnetic_field_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/magnetic_field_label"
+                android:layout_alignStart="@id/magnetic_field_label"
+                android:layout_marginTop="20dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/air_pressure_section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@id/gyroscope_section"
+            android:layout_below="@id/gyroscope_section">
+
+            <ImageView
+                android:id="@+id/air_pressure_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/air_pressure_icon"
+                android:backgroundTint="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/air_pressure_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/air_pressure_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="10dp"
+                android:text="@string/air_pressure"/>
+
+            <TextView
+                android:id="@+id/air_pressure_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/air_pressure_label"
+                android:layout_alignStart="@id/air_pressure_label"
+                android:layout_marginTop="20dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

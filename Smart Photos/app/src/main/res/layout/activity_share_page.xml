@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_share_page">
+
+
+    <RelativeLayout
+        android:id="@+id/share_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="12dp">
+
+        <Button
+            android:id="@+id/button_back_share_page"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:background="@drawable/abc_vector_test"
+            android:backgroundTint="#FCBCB9B9"
+            android:onClick="onBackButtonClick"
+            android:layout_marginStart="18dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/share_image"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/share_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/share_top_bar"
+        android:layout_alignParentEnd="true"
+        android:fillViewport="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/new_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+            <RelativeLayout
+                android:id="@+id/share_metadata_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_below="@id/new_image_view" >
+
+                <ImageView
+                    android:id="@+id/share_metadata_button"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_alignParentStart="true"
+                    android:onClick="onMetadataPress"
+                    app:srcCompat="@drawable/ic_outline_integration_instructions_24"
+                    app:tint="@color/colorPrimary" />
+
+                <ImageView
+                    android:id="@+id/share_map_button"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_toEndOf="@id/share_metadata_button"
+                    android:onClick="onMapButtonPress"
+                    app:srcCompat="@drawable/ic_outline_location_on_24"
+                    app:tint="@color/colorPrimary" />
+
+                <ImageView
+                    android:id="@+id/share_button"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentEnd="true"
+                    android:onClick="onClickShare"
+                    app:srcCompat="@drawable/ic_outline_share_24"
+                    app:tint="@color/colorPrimary" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+

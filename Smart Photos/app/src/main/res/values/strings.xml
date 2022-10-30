@@ -1,0 +1,232 @@
+<resources>
+    <string name="app_name">Insight</string>
+    <string name="get_location">Get Location!</string>
+    <string name="camera">Camera</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="welcome">Welcome to\nInsight</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="existing_user">Already have an account?</string>
+    <string name="welcome_back">Welcome back!</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="terms_of_service">By signing up you have agreed to our</string>
+    <string name="terms_of_use_privacy_policy"><![CDATA[Terms of Use & Privacy Policy]]></string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="todo">TODO</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="change_password">Change password</string>
+    <string name="save">Save</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="enter_your_phone_number">Enter your phone number</string>
+    <string name="enter_your_address">Enter your address</string>
+    <string name="enter_your_birthdate">Enter your birthdate</string>
+    <string name="about_me">ABOUT ME</string>
+    <string name="gender">GENDER</string>
+    <string name="birthdate">BIRTHDATE</string>
+    <string name="introduction">Introduction</string>
+    <string name="name">Name</string>
+    <string name="e_mail">E-MAIL</string>
+    <string name="phone_number">PHONE NUMBER</string>
+    <string name="share_link_description">Send your shareable link to someone with a SmartPhotos account. They\'ll be able to see your image and the metadata associated with it.</string>
+    <string name="share">SHARE</string>
+    <string name="copy">COPY</string>
+    <string name="share_image">Share Image</string>
+    <string name="about_image">About This Photo</string>
+    <string name="share_info">This image was taken:</string>
+    <string name="view_image">View Image</string>
+    <string name="shared_image">Shared Image</string>
+    <string name="user_name">Name</string>
+    <string name="user_password">PASSWORD</string>
+    <string name="dont_have_an_account_sign_up_now">Don\'t have an account? Sign up now</string>
+    <string name="generate">generate</string>
+    <string name="generate_link">Generate Link</string>
+    <string name="hours_valid">Number of hours the link will be valid for:</string>
+    <string name="default_hours">24</string>
+    <string name="error">Something Went Wrong</string>
+    <string name="change_profile_photo">Change profile photo</string>
+    <string name="logout">Logout</string>
+    <string name="acceleration">Acceleration</string>
+    <string name="gyroscope">Gyroscope</string>
+    <string name="magnetic_field">Magnetic Field</string>
+    <string name="air_pressure">Air Pressure</string>
+    <string name="metadata">Metadata</string>
+    <string name="location">Location</string>
+    <string name="image_location">Image Location</string>
+    <string name="my_photos">My Photos</string>
+    <string name="bookmarked">Bookmarked</string>
+    <string name="owner">Owner</string>
+    <string name="birthday">Birthday</string>
+    <string name="date">Date</string>
+    <string name="about">About</string>
+    <string name="developers">Developers</string>
+    <string name="developers_list">-  Benjamin Gane\n\n-  Jermaine Janszen\n\n-  Abraham Elias\n\n-  Presley Liauw\n\n-  Xiaoxiang (William) Wu\n\n-  Naixin (Jane) Li</string>
+    <string name="terms_and_privacy">Terms and Privacy</string>
+    <string name="privacy_policy">Privacy Policy</string>
+
+    <string name="privacy_policy_content">
+        <big>Privacy Policy for Riddles Tech</big>
+\n\n
+        <p>At Insight,  one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Insight and how we use it.</p>
+
+        <p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.</p>
+
+        <p>This Privacy Policy applies only to our online activities and is valid for visitors to our application with regards to the information that they shared and/or collect in Insight. This policy is not applicable to any information collected offline or via channels other than this application. Our Privacy Policy was created with the help of the <a href="https://www.privacypolicygenerator.info">Privacy Policy Generator</a> and the <a href="https://www.privacypolicies.com/privacy-policy-generator/">Free Privacy Policy Generator</a>.</p>
+\n\n
+        <b>Consent</b>
+\n
+        <p>By using our app, you hereby consent to our Privacy Policy and agree to its terms. For our Terms and Conditions, please visit the <a href="https://www.privacypolicyonline.com/terms-conditions-generator/">Terms &amp; Conditions Generator</a>.</p>
+\n\n
+        <b>Information we collect</b>
+\n
+        <p>The personal information that you are asked to provide, and the reasons why you are asked to provide it, will be made clear to you at the point we ask you to provide your personal information.</p>
+        <p>If you contact us directly, we may receive additional information about you such as your name, email address, phone number, the contents of the message and/or attachments you may send us, and any other information you may choose to provide.</p>
+        <p>When you register for an Account, we may ask for your contact information, including items such as name, company name, address, email address, and telephone number.</p>
+\n\n
+        <b>How we use your information</b>
+\n
+        <p>We use the information we collect in various ways, including to:</p>\n
+
+        <p>- Provide, operate, and maintain our app</p>\n
+        <p>- Improve, personalize, and expand our app</p>\n
+        <p>- Understand and analyze how you use our app</p>\n
+        <p>- Develop new products, services, features, and functionality</p>\n
+        <p>- Communicate with you, either directly or through one of our partners, including for customer service, to provide you with updates and other information relating to the app, and for marketing and promotional purposes</p>\n
+        <p>- Send you emails</p>\n
+        <p>- Find and prevent fraud</p>
+\n\n
+        <b>Third Party Privacy Policies</b>
+\n
+        <p>Insight\'s Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options. </p>
+
+\n\n
+        <b>CCPA Privacy Rights (Do Not Sell My Personal Information)</b>
+\n
+        <p>Under the CCPA, among other rights, California consumers have the right to:</p>
+        <p>Request that a business that collects a consumer\'s personal data disclose the categories and specific pieces of personal data that a business has collected about consumers.</p>
+        <p>Request that a business delete any personal data about the consumer that a business has collected.</p>
+        <p>Request that a business that sells a consumer\'s personal data, not sell the consumer\'s personal data.</p>
+        <p>If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.</p>
+\n\n
+        <b>GDPR Data Protection Rights</b>
+\n
+        <p>We would like to make sure you are fully aware of all of your data protection rights. Every user is entitled to the following:</p>\n
+        <p>The right to access – You have the right to request copies of your personal data. We may charge you a small fee for this service.</p>\n
+        <p>The right to rectification – You have the right to request that we correct any information you believe is inaccurate. You also have the right to request that we complete the information you believe is incomplete.</p>\n
+        <p>The right to erasure – You have the right to request that we erase your personal data, under certain conditions.</p>\n
+        <p>The right to restrict processing – You have the right to request that we restrict the processing of your personal data, under certain conditions.</p>\n
+        <p>The right to object to processing – You have the right to object to our processing of your personal data, under certain conditions.</p>\n
+        <p>The right to data portability – You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.</p>\n
+        <p>If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.</p>
+\n\n
+        <b>Children\'s Information</b>
+\n
+        <p>Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.</p>
+
+        <p>Insight does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our app, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.</p>
+    </string>
+
+    <string name="terms_content">
+        <big>Terms and Conditions</big>
+\n\n
+        <p>Welcome to Insight!</p>\n
+
+        <p>These terms and conditions outline the rules and regulations for the use of Insight, owned by Riddles Tech.</p>
+
+        <p>By using this application we assume you accept these terms and conditions. Do not continue to use Insight if you do not agree to take all of the terms and conditions stated on this page.</p>
+
+        <p>The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: "Client", "You" and "Your" refers to you, the person using this app and compliant to the Company’s terms and conditions. "The Company", "Ourselves", "We", "Our" and "Us", refers to our Company. "Party", "Parties", or "Us", refers to both the Client and ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner for the express purpose of meeting the Client’s needs in respect of provision of the Company’s stated services, in accordance with and subject to, prevailing law of Netherlands. Any use of the above terminology or other words in the singular, plural, capitalization and/or he/she or they, are taken as interchangeable and therefore as referring to same. Our Terms and Conditions were created with the help of the <a href="https://www.privacypolicyonline.com/terms-conditions-generator/">Terms &amp; Conditions Generator</a> and the <a href="https://www.generateprivacypolicy.com">Privacy Policy Generator</a>.</p>
+\n\n
+        <b>License</b>\n
+
+        <p>Unless otherwise stated, Insight and/or its licensors own the intellectual property rights for all material on Insight. All intellectual property rights are reserved. You may access this from Insight for your own personal use subjected to restrictions set in these terms and conditions.</p>
+
+        <p>You must not:</p>\n
+        <p>- Republish material from Insight</p>\n
+        <p>- Sell, rent or sub-license material from Insight</p>\n
+        <p>- Reproduce, duplicate or copy material from Insight</p>\n
+        <p>- Redistribute content from Insight</p>\n
+
+        <p>This Agreement shall begin on the date hereof.</p>
+
+        <p>Parts of this app offer an opportunity for users to post and exchange information in certain areas of the app. Insight does not filter, edit, publish or review images prior to their presence on the app. Images do not reflect the views and opinions of Insight, its agents and/or affiliates. Images reflect the views and opinions of the person who post their views and opinions. To the extent permitted by applicable laws, Insight shall not be liable for the images or for any liability, damages or expenses caused and/or suffered as a result of any use of and/or posting of and/or appearance of the images on this app.</p>
+
+        <p>Insight reserves the right to monitor all Comments and to remove any Comments which can be considered inappropriate, offensive or causes breach of these Terms and Conditions.</p>
+
+        <p>You warrant and represent that:</p>
+\n
+        <p>- You are entitled to post the images on our app and have all necessary licenses and consents to do so;</p>\n
+        <p>- The Comments do not invade any intellectual property right, including without limitation copyright, patent or trademark of any third party;</p>\n
+        <p>- The Comments do not contain any defamatory, libelous, offensive, indecent or otherwise unlawful material which is an invasion of privacy</p>\n
+        <p>- The Comments will not be used to solicit or promote business or custom or present commercial activities or unlawful activity.</p>\n
+
+        <p>You hereby grant Insight a non-exclusive license to use, reproduce, edit and authorize others to use, reproduce and edit any of your Comments in any and all forms, formats or media.</p>
+\n\n
+        <b>Hyperlinking to our Content</b>\n
+
+        <p>The following organizations may link to our application without prior written approval:</p>
+\n
+        <p>- Government agencies;</p>\n
+        <p>- Search engines;</p>\n
+        <p>- News organizations;</p>\n
+        <p>- Online directory distributors may link to our app in the same manner as they hyperlink to the apps of other listed businesses; and</p>\n
+        <p>- System wide Accredited Businesses except soliciting non-profit organizations, charity shopping malls, and charity fundraising groups which may not hyperlink to our Web site.</p>\n
+
+        <p>These organizations may link to our home page, to publications or to other app information so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products and/or services; and (c) fits within the context of the linking party’s site.</p>
+
+        <p>We may consider and approve other link requests from the following types of organizations:</p>
+\n
+        <p>- commonly-known consumer and/or business information sources;</p>\n
+        <p>- dot.com community sites;</p>\n
+        <p>- associations or other groups representing charities;</p>\n
+        <p>- online directory distributors;</p>\n
+        <p>- internet portals;</p>\n
+        <p>- accounting, law and consulting firms; and</p>\n
+        <p>- educational institutions and trade associations.</p>\n
+
+        <p>We will approve link requests from these organizations if we decide that: (a) the link would not make us look unfavorably to ourselves or to our accredited businesses; (b) the organization does not have any negative records with us; (c) the benefit to us from the visibility of the hyperlink compensates the absence of Insight; and (d) the link is in the context of general resource information.</p>
+
+        <p>These organizations may link to our home page so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products or services; and (c) fits within the context of the linking party’s site.</p>
+
+        <p>If you are one of the organizations listed in paragraph 2 above and are interested in linking to our app, you must inform us by sending an e-mail to Insight. Please include your name, your organization name, contact information as well as the URL of your site, a list of any URLs from which you intend to link to our application, and a list of the URLs on our site to which you would like to link. Wait 2-3 weeks for a response.</p>
+
+        <p>Approved organizations may hyperlink to our application as follows:</p>
+        \n
+        <p>- By use of our corporate name; or</p>\n
+        <p>- By use of the uniform resource locator being linked to; or</p>\n
+        <p>- By use of any other description of our app being linked to that makes sense within the context and format of content on the linking party’s site.</p>\n
+
+
+        <p>No use of Insight\'s logo or other artwork will be allowed for linking absent a trademark license agreement.</p>
+\n\n
+        <b>Content Liability</b>\n
+
+        <p>We shall not be hold responsible for any content that appears on your platform. You agree to protect and defend us against all claims that is rising on your platform. No link(s) should appear on any platform that may be interpreted as libelous, obscene or criminal, or which infringes, otherwise violates, or advocates the infringement or other violation of, any third party rights.</p>
+\n\n
+        <b>Reservation of Rights</b>\n
+
+        <p>We reserve the right to request that you remove all links or any particular link to our application. You approve to immediately remove all links to our application upon request. We also reserve the right to amen these terms and conditions and it’s linking policy at any time. By continuously linking to our app, you agree to be bound to and follow these linking terms and conditions.</p>
+\n\n
+        <b>Removal of links from our application</b>\n
+
+        <p>If you find any link on our app that is offensive for any reason, you are free to contact and inform us any moment. We will consider requests to remove links but we are not obligated to or so or to respond to you directly.</p>
+
+        <p>We do not ensure that the information on this app is correct, we do not warrant its completeness or accuracy; nor do we promise to ensure that the app remains available or that the material on the app is kept up to date.</p>
+\n\n
+        <b>Disclaimer</b>\n
+
+        <p>To the maximum extent permitted by applicable law, we exclude all representations, warranties and conditions relating to our app and the use of this app. Nothing in this disclaimer will:</p>
+        \n
+        <p>- limit or exclude our or your liability for death or personal injury;</p>\n
+        <p>- limit or exclude our or your liability for fraud or fraudulent misrepresentation;</p>\n
+        <p>- limit any of our or your liabilities in any way that is not permitted under applicable law; or</p>\n
+        <p>- exclude any of our or your liabilities that may not be excluded under applicable law.</p>\n
+
+        <p>The limitations and prohibitions of liability set in this Section and elsewhere in this disclaimer: (a) are subject to the preceding paragraph; and (b) govern all liabilities arising under the disclaimer, including liabilities arising in contract, in tort and for breach of statutory duty.</p>
+
+        <p>As long as the app and the information and services on the app are provided free of charge, we will not be liable for any loss or damage of any nature.</p>
+    </string>
+
+</resources>

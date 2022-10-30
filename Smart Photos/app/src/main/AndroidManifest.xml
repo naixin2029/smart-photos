@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="smart.photos"
+    tools:ignore="ExtraText">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+        <activity android:name=".HomePageActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:host="smartphoto.com"
+                    android:scheme="https"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".WelcomeActivity" >
+
+        </activity>
+
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".EditProfileActivity" />
+        <activity android:name=".share.SharePageActivity"/>
+        <activity android:name=".view.ViewImageActivity" />
+        <activity android:name=".share.GenerateLinkActivity"
+            android:theme="@style/Theme.Design.BottomSheetDialog" />
+        <activity android:name=".view.ViewImageInvalidActivity"
+            android:theme="@style/Theme.Design.BottomSheetDialog" />
+        <activity android:name=".share.MetadataActivity"
+            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar.MinWidth" />
+        <activity android:name=".map.MapActivity" />
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".TermsActivity" />
+
+        <service
+            android:enabled="true"
+            android:name=".FetchAddressIntentService" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="smart.photos.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/maps_api_key" />
+    </application>
+
+</manifest>
