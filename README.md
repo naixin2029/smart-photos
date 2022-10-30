@@ -5,7 +5,6 @@ With so many photos being shared online and the ease of which they can be edited
 
 For full details, 
 view the project [scope statement](https://docs.google.com/document/d/1UKpeMUImPyK0F95fr1HLlRsca6lM9Uzlq6h1vX1sKNQ/edit?usp=sharing) and
-
 view the project [report](https://docs.google.com/document/d/1nygoYnQJjtUY7fWEP-uIs0MroK6OAfXb76B7mV8KmYE/edit?usp=sharing).
 
 
